@@ -1,0 +1,25 @@
+@media screen and (max-width: 2560px) {
+    nav {
+        width: 60%;
+    }
+    .agency-feature {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    nav {
+        width: 60%;
+        flex-basis: 1400px;
+    }
+    figure {
+        margin: 0;
+        flex-basis: 100px;
+    }
+    .header-links {
+        
+    }
+    .agency-feature {
+        width: 84%;
+    }
+}

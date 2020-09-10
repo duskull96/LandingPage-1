@@ -1,0 +1,668 @@
+@font-face {
+    font-family: OpenSans; /* Имя шрифта */
+    src: url(/fonts/OpenSans-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: GothaProLig; /* Имя шрифта */
+    src: url(/fonts/GothaProLig.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: GothaProMed; /* Имя шрифта */
+    src: url(/fonts/GothaProMed.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: Gotham-Book; /* Имя шрифта */
+    src: url(/fonts/Gotham-Book.ttf); /* Путь к файлу со шрифтом */
+}
+
+/* ======= FONTS ======= */
+
+
+html, body{
+    margin: 0 auto;
+    width: 100%;
+}
+img {
+    pointer-events: none;
+    user-select: none;
+}
+figure {
+    margin: 0;
+}
+figure > img {
+    box-shadow: 10px 10px 0px rgb(255 255 255 / 68%);
+}
+
+/* ======= HEADER ======= */
+
+header {
+    height: 100vh;
+    background-image: url(img/header-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    user-select: none;
+}
+.header-header {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 20px;
+    height: 90px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+ul > li {
+    list-style-type: none;
+    display: inline;
+}
+.header-links {
+    display: flex;
+    width: 60%;
+    height: 90px;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+    font-family: OpenSans;
+    font-size: 15px;
+    margin: 0;
+}
+.header-links > li {
+    margin-top: 30px;
+}
+
+.header-links > li:hover {
+    border-bottom: 4px solid #11749e;
+}
+.header-icons {
+    display: flex;
+    width: 15%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 12px;
+    color: #fff;
+}
+nav {
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.header-main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+hgroup > h1 {
+    font-family: GothaProLig;
+    color: #fff;
+    font-size: 155px;
+    font-weight: lighter;
+    margin: 0;
+}
+hgroup > h4 {
+    font-family: GothaProMed;
+    color: #11749e;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-top: 15px;
+    text-transform: uppercase;
+    letter-spacing: 19px;
+}
+.header-footer {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    opacity: 50%;
+    transition: 2s;
+    margin-bottom: 30px;
+}
+.header-footer:hover {
+    opacity: 100;
+    transition: 2s;
+}
+.header-footer-cirсle {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.header-footer-cirсle > i {
+    animation: header-footer-cirсle-anim 4s linear infinite;
+}
+@keyframes header-footer-cirсle-anim {
+    0%{
+        transform: translate(0, -20%);
+    }
+    50% {
+        transform: translate(0, 20%);
+    }
+    100% {
+        transform: translate(0,-20%);
+    }
+}
+.header-footer > h5 {
+    font-family: GothaProLig;
+    color: #fff;
+}
+
+/* ======= HEADER ======= */
+
+/* ======= MAIN ======= */
+
+.agency {
+    display: flex;
+    background-image: url(/img/about-agency-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    height: 740px;
+}
+.agency-title {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    user-select: none;
+}
+.agency-title__content {
+    font-family: GothaProLig;
+    color: #fff;
+    position: absolute;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.agency-feature {
+    margin-top: 70px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.agency-feature__one,.agency-feature__two,.agency-feature__three,.agency-feature__four {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.agency-feature__two,.agency-feature__three,.agency-feature__four {
+    margin-left: 40px;
+}
+.agency-feature__icon {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.agency-feature__icon > i {
+    color: #fff;
+    opacity: 90%;
+}
+.agency-feature__title > h3 {
+    font-family: GothaProMed;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #fff;
+}
+.agency-feature__content {
+    font-family: Gotham-Book;
+    font-size: 15px;
+    color: #fff;
+    opacity: 80%;
+}
+
+
+.news {
+    height: 921px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.news-black {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 50%;
+}
+.content {
+    width: 470px;
+}
+.content__date > h4 {
+    font-family: Gotham-Book;
+    font-size: 13px;
+    font-weight: lighter;
+}
+.content__title > h3 {
+    font-family: GothaProMed;
+    font-size: 25px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 47px;
+}
+.content__text > p {
+    font-family: Gotham-Book;
+    font-size: 15px;
+    font-weight: lighter;
+    line-height: 1.5;
+}
+.news-black__content {
+    background-color: #222222;
+    color: #fff;
+    width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.news-black__img {
+    background-image: url(/img/black-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+.news-white {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 50%;
+}
+.news-white__content {
+    background-color: #f3f3f3;
+    color: #000;
+    width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.news-white__img {
+    background-image: url(/img/white-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+
+.blog {
+    height: 1000px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+}
+.blog-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.blog-header__logo {
+    margin-top: 90px;
+    position: absolute;
+    user-select: none;
+}
+.blog-header__title {
+    position: absolute;
+}
+.blog-header__title > h2 {
+    margin-top: 155px;
+    text-align: center;
+    margin-left: -10px;
+    font-family: GothaProMed;
+    font-size: 37px;
+    text-transform: uppercase;
+    user-select: none;
+}
+.blog-header__title > h3 {
+    margin-top: 115px;
+    font-family: Gotham-Book;
+    font-size: 30px;
+    font-weight: lighter;
+    opacity: 90%;
+}
+.blog-article {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 404px;
+}
+.blog-article > article {
+    width: 280px;
+    text-align: center;
+}
+.article__title > h3 {
+    font-family: GothaProMed;
+    font-size: 18px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: #11749e;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+.article__text > p {
+    font-family: Gotham-Book;
+    font-size: 15px;
+    margin-top: 27px;
+    line-height: 1.5;
+}
+.article__img {
+    user-select: none;
+}
+
+
+.quick-action {
+    background-image: url(/img/quick-action-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 375px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.quick-action__content {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 500px;
+    align-self: center;
+    color: #fff;
+}
+.content__icon {
+    display: flex;
+    align-self: center;
+}
+.content__icon > i {
+    margin-right: 30px;
+}
+
+
+.feature {
+    background-image: url(/img/feature-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    height: 848px;
+}
+.feature-left {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 116px;
+}
+.feature-content {
+    color: #fff;
+    width: 480px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-end;
+}
+.feature-content-title > h3 {
+    margin-bottom: 20px;
+}
+.feature-keys__one,.feature-keys__two,.feature-keys__three {
+    text-transform: uppercase;
+    font-family: GothaProMed;
+    font-size: 15px;
+    height: 38px;
+    background-color: #11749e;
+    margin-bottom: 24px;
+}
+.feature-keys {
+    margin-top: 57px;
+}
+.feature-keys__one > h4 {
+    padding-top: 10px;
+    padding-left: 20px;
+    margin: 0px;
+}
+.feature-keys__two > h4 {
+    padding-top: 10px;
+    padding-left: 20px;
+    margin: 0px;
+}
+.feature-keys__three > h4 {
+    padding-top: 10px;
+    padding-left: 20px;
+    margin: 0px;
+}
+.feature-keys__one {
+    width: 369px;
+}
+.feature-keys__two {
+    width: 400px;
+}
+.feature-keys__three {
+    width: 428px;
+}
+.feature-right {
+    width: 50%;
+    margin-left: 113px;
+}
+.feature-phone {
+    user-select: none;
+}
+
+
+.team {
+    height: 944px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.team-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 405px;
+}
+.team-title__logo {
+    margin-top: 90px;
+    position: absolute;
+    user-select: none;
+}
+.team-title__text {
+    position: absolute;
+    user-select: none;
+}
+.team-title__text > h2 {
+    font-family: GothaProMed;
+    font-size: 37px;
+    text-transform: uppercase;
+    margin-top: 140px;
+}
+.team-title__text > h3 {
+    font-family: Gotham-Book;
+    font-size: 30px;
+    font-weight: lighter;
+    opacity: 90%;
+    margin-top: 145px;
+}
+.team-members {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.member__name {
+    width: 216px;
+    background: #fff;
+    text-align: center;
+    height: 117px;
+    margin-top: -48px;
+}
+.member__name > h3 {
+    font-family: GothaProMed;
+    font-size: 20px;
+    color: #11749e;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.member__name > h4 {
+    font-family: GothaProMed;
+    font-size: 15px;
+    font-weight: lighter;
+    margin: 0;
+}
+
+
+
+.formarea {
+    height: 852px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/img/form-backgroung.png);
+    background-image: no-repeat;
+    background-size: cover;
+}
+.formarea-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.formarea-title__logo {
+    margin-top: 144px;
+}
+.formarea-title__text {
+    position: absolute;
+    user-select: none;
+}
+.formarea-title__text > h2 {
+    font-family: GothaProMed;
+    font-size: 37px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin-top: 216px;
+    color: #fff;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items:center;
+    margin-top: 76px;
+}
+form > button  {
+    width: 227px;
+    height: 64px;
+    margin-top: 46px;
+    font-family: GothaProMed;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #11749e;
+    border: none;
+    transition: 1s;
+    cursor: pointer;
+}
+form > button:hover {
+    outline: none;
+    background: #1794ca;
+    transition: 1s;
+    box-shadow: 10px 10px 2px 0 black;
+}
+form > button:focus {
+    outline: none;
+    transition: 1.5s;
+    opacity: 0;
+    /* background: #0d5e81; */
+}
+form > ul {
+    padding: 0;
+    margin-bottom: 39px;
+}
+form > ul > li {
+    width: 370px;
+}
+.form-name,.form-email,.form-phone {
+    width: 344px;
+    height: 44px;
+}
+.form-message {
+    max-width: 1144px;
+    max-height: 148px;
+    min-width: 1144px;
+    min-height: 148px;
+}
+.form-name,.form-email,.form-phone,.form-message {
+    font-family: Gotham-Book;
+    font-size: 15px;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+    padding-left: 20px;
+}
+.form-message {
+    padding-top: 17px;
+    resize: none;
+}
+.form-name::placeholder,.form-email::placeholder,.form-phone::placeholder,.form-message::placeholder {
+    font-family: Gotham-Book;
+    font-size: 15px;
+    color: #fff;
+}
+.form-name:focus,.form-email:focus,.form-phone:focus,.form-message:focus {
+    outline: none;
+}
+.form-email,.form-phone {
+    margin-left: 28px;
+}
+
+.footer-map {
+    background-image: url(/img/footer-map.png);
+    background-size: cover;
+    height: 340px;
+}
+.footer-contacts {
+    height: 110px;
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-contacts > h4 {
+    font-family: Gotham-Book;
+    font-weight: lighter;
+    font-size: 15px;
+    color: #fff;
+}
