@@ -164,7 +164,7 @@ hgroup > h4 {
 
 .agency {
     display: flex;
-    background-image: url(/img/about-agency-background.png);
+    background-image: url(img/about-agency-background.png);
     background-repeat: no-repeat;
     background-size: cover;
     flex-wrap: wrap;
@@ -278,7 +278,7 @@ hgroup > h4 {
     align-items: center;
 }
 .news-black__img {
-    background-image: url(/img/black-img.png);
+    background-image: url(img/black-img.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
@@ -301,7 +301,7 @@ hgroup > h4 {
     align-items: center;
 }
 .news-white__img {
-    background-image: url(/img/white-img.png);
+    background-image: url(img/white-img.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
@@ -376,7 +376,7 @@ hgroup > h4 {
 
 
 .quick-action {
-    background-image: url(/img/quick-action-background.png);
+    background-image: url(img/quick-action-background.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -402,7 +402,7 @@ hgroup > h4 {
 
 
 .feature {
-    background-image: url(/img/feature-background.png);
+    background-image: url(img/feature-background.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -551,7 +551,7 @@ hgroup > h4 {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    background-image: url(/img/form-backgroung.png);
+    background-image: url(img/form-backgroung.png);
     background-image: no-repeat;
     background-size: cover;
 }
@@ -649,7 +649,7 @@ form > ul > li {
 }
 
 .footer-map {
-    background-image: url(/img/footer-map.png);
+    background-image: url(img/footer-map.png);
     background-size: cover;
     height: 340px;
 }
