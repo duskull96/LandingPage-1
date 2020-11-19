@@ -1,18 +1,18 @@
 @font-face {
     font-family: OpenSans; /* Имя шрифта */
-    src: url(/fonts/OpenSans-Regular.ttf); /* Путь к файлу со шрифтом */
+    src: url(fonts/OpenSans-Regular.ttf); /* Путь к файлу со шрифтом */
 }
 @font-face {
     font-family: GothaProLig; /* Имя шрифта */
-    src: url(/fonts/GothaProLig.otf); /* Путь к файлу со шрифтом */
+    src: url(fonts/GothaProLig.otf); /* Путь к файлу со шрифтом */
 }
 @font-face {
     font-family: GothaProMed; /* Имя шрифта */
-    src: url(/fonts/GothaProMed.otf); /* Путь к файлу со шрифтом */
+    src: url(fonts/GothaProMed.otf); /* Путь к файлу со шрифтом */
 }
 @font-face {
     font-family: Gotham-Book; /* Имя шрифта */
-    src: url(/fonts/Gotham-Book.ttf); /* Путь к файлу со шрифтом */
+    src: url(fonts/Gotham-Book.ttf); /* Путь к файлу со шрифтом */
 }
 
 /* ======= FONTS ======= */
